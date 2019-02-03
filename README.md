@@ -39,13 +39,26 @@ Adicionando dependências dentro projeto Dados
   "dotnet add package Microsoft.EntityFrameworkCore.Tools"
   
   Adicionando referência do projeto Domínio dentro do projeto Dados ("cd .\Dados\")
-  "dotnet add reference ../Dominio/Dominio.csproj"
+  "dotnet add reference ..\Dominio\Dominio.csproj"
   
 Adicionando dependências dentro do projeto MVC
 "cd .\Mvc\"
 
   Adicionando referência do projeto Dados dentro do projeto Mvc ("cd .\Mvc\")
-  "dotnet add reference ../Dados/Dados.csproj"
+  "dotnet add reference ..\Dados\Dados.csproj"
   
 Criando migration dentro Projeto Dados ("cd .\Dados\")
+Entidade Categoria
 "dotnet ef --startup-project ..\Mvc\Mvc.csproj migrations add AdicionandoCategoria"
+
+Atualizando Migrations ("cd .\Dados\")
+"dotnet ef --startup-project ..\Mvc\Mvc.csproj database update"
+
+Entidade Produtos
+"dotnet ef --startup-project ..\Mvc\Mvc.csproj migrations add AdicionandoProduto"
+
+Atualizando Migrations ("cd .\Dados\")
+"dotnet ef --startup-project ..\Mvc\Mvc.csproj database update"
+
+Adicionando referência do projeto Domínio dentro do projeto Mvc ("cd .\Mvc\") 
+"dotnet add reference ..\Dominio\Dominio.csproj"
