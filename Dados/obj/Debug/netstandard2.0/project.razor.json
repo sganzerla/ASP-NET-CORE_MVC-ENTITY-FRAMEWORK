@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\alisson-pc\\Documents\\Cursos Udemy\\aspnet-core-aprendendo-do-zero-ao-avancado\\modulo4\\Dados\\Dados.csproj",
+  "TargetFramework": "netstandard2.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
