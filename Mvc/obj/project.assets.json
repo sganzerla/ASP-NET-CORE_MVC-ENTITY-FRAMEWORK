@@ -12102,6 +12102,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Dados >= 1.0.0",
+      "Dominio >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0"
@@ -12139,6 +12140,9 @@
           "projectReferences": {
             "C:\\Users\\alisson-pc\\Documents\\Cursos Udemy\\aspnet-core-aprendendo-do-zero-ao-avancado\\modulo4\\Dados\\Dados.csproj": {
               "projectPath": "C:\\Users\\alisson-pc\\Documents\\Cursos Udemy\\aspnet-core-aprendendo-do-zero-ao-avancado\\modulo4\\Dados\\Dados.csproj"
+            },
+            "C:\\Users\\alisson-pc\\Documents\\Cursos Udemy\\aspnet-core-aprendendo-do-zero-ao-avancado\\modulo4\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\alisson-pc\\Documents\\Cursos Udemy\\aspnet-core-aprendendo-do-zero-ao-avancado\\modulo4\\Dominio\\Dominio.csproj"
             }
           }
         }

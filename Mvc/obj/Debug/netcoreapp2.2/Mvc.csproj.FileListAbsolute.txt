@@ -32,3 +32,4 @@ C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-ava
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\bin\Debug\netcoreapp2.2\Dominio.dll
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\bin\Debug\netcoreapp2.2\Dados.pdb
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\bin\Debug\netcoreapp2.2\Dominio.pdb
+C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\obj\Debug\netcoreapp2.2\Razor\Views\Categoria\Salvar.g.cshtml.cs
