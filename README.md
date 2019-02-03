@@ -29,14 +29,23 @@ Build da solução
 Adicionando dependências dentro projeto Dados
 "cd .\Dados\"
 
-  EntityFramework Core 
+  EntityFramework Core ("cd .\Dados\")
   "dotnet add package Microsoft.EntityFrameworkCore"
 
-  Driver do SQLSERVER
+  Driver do SQLSERVER ("cd .\Dados\")
   "dotnet add package Microsoft.EntityFrameworkCore.SqlServer"
 
-  Tools
+  Tools Ferramenta p/ Migrations ("cd .\Dados\")
   "dotnet add package Microsoft.EntityFrameworkCore.Tools"
   
-  Adicionando referência do projeto Domínio dentro do projeto Dados
+  Adicionando referência do projeto Domínio dentro do projeto Dados ("cd .\Dados\")
   "dotnet add reference ../Dominio/Dominio.csproj"
+  
+Adicionando dependências dentro do projeto MVC
+"cd .\Mvc\"
+
+  Adicionando referência do projeto Dados dentro do projeto Mvc ("cd .\Mvc\")
+  "dotnet add reference ../Dados/Dados.csproj"
+  
+Criando migration dentro Projeto Dados ("cd .\Dados\")
+"dotnet ef --startup-project ..\Mvc\Mvc.csproj migrations add AdicionandoCategoria"
