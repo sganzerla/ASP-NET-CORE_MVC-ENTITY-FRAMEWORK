@@ -9,26 +9,43 @@ namespace Mvc.Controllers
     {
         private ApplicationDbContext _contexto;
 
-        public CategoriaController(ApplicationDbContext contexto){
+        public CategoriaController(ApplicationDbContext contexto)
+        {
             _contexto = contexto;
         }
         [HttpGet]
-        public IActionResult Index(){
-           var categorias = _contexto.Categorias.ToList(); 
-           return View(categorias);
+        public IActionResult Index()
+        {
+            var categorias = _contexto.Categorias.ToList();
+            return View(categorias);
+        }
+        [HttpGet]
+        public IActionResult Editar(int id)
+        {
+            var categoria = _contexto.Categorias.First(c => c.Id == id);
+            return View("Salvar", categoria);
         }
 
         [HttpGet]
-        public IActionResult Salvar(){
+        public IActionResult Salvar()
+        {
             return View();
         }
 
-      [HttpPost]
-        public async Task<IActionResult> Salvar(Categoria categoria){
-            _contexto.Categorias.Add(categoria);
+        [HttpPost]
+        public async Task<IActionResult> Salvar(Categoria categoriaPersist)
+        {
+            if (categoriaPersist.Id == 0)
+                _contexto.Categorias.Add(categoriaPersist);
+            else
+            {
+                var categoria = _contexto.Categorias.First(c => c.Id == categoriaPersist.Id);
+                categoria.Nome = categoriaPersist.Nome;
+            }
+
             //métodos assincronos otimizam as treads  
             await _contexto.SaveChangesAsync();
             return RedirectToAction("Index");
-        }                
+        }
     }
 }
