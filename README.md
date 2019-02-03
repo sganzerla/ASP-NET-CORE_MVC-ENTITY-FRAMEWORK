@@ -29,11 +29,14 @@ Build da solução
 Adicionando dependências dentro projeto Dados
 "cd .\Dados\"
 
-EntityFramework Core 
-"dotnet add package Microsoft.EntityFrameworkCore"
+  EntityFramework Core 
+  "dotnet add package Microsoft.EntityFrameworkCore"
 
-Driver do SQLSERVER
-"dotnet add package Microsoft.EntityFrameworkCore.SqlServer"
+  Driver do SQLSERVER
+  "dotnet add package Microsoft.EntityFrameworkCore.SqlServer"
 
-Tools
-"dotnet add package Microsoft.EntityFrameworkCore.Tools"
+  Tools
+  "dotnet add package Microsoft.EntityFrameworkCore.Tools"
+  
+  Adicionando referência do projeto Domínio dentro do projeto Dados
+  "dotnet add reference ../Dominio/Dominio.csproj"
