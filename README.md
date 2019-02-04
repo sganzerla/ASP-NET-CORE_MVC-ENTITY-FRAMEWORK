@@ -62,3 +62,6 @@ Atualizando Migrations ("cd .\Dados\")
 
 Adicionando referência do projeto Domínio dentro do projeto Mvc ("cd .\Mvc\") 
 "dotnet add reference ..\Dominio\Dominio.csproj"
+
+Adicionando biblioteca auxiliar de ORM LazyLoadingProxies ("cd .\Dados\") 
+"dotnet add package Microsoft.EntityFrameworkCore.Proxies"
