@@ -25,6 +25,14 @@ namespace Mvc.Controllers
             var categoria = _contexto.Categorias.First(c => c.Id == id);
             return View("Salvar", categoria);
         }
+        [HttpGet]
+        public async Task<IActionResult> Deletar(int id)
+        {
+            var categoria = _contexto.Categorias.First(c => c.Id == id);
+            _contexto.Categorias.Remove(categoria);
+            await _contexto.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
 
         [HttpGet]
         public IActionResult Salvar()
