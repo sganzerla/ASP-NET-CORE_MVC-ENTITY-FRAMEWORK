@@ -9,6 +9,13 @@ namespace Dados
         {
 
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            //onera bastante a aplicação 
+            optionsBuilder.UseLazyLoadingProxies();
+        }
+
         //mapeando classes
         public DbSet<Categoria> Categorias { get; set; }
 
