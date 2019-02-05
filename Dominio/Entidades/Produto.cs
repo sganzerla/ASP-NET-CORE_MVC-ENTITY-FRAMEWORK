@@ -6,6 +6,7 @@ namespace Dominio.Entidades
         public string Nome { get; set; }
         //virtual pode ser carregado de forma lenta, preguiçosa conceito do LazyLoadingProxies
         public virtual Categoria Categoria { get; set; }
-        public int CategoriaId { get; set; }
+        public int CategoriaId { get; set; }       
+        public bool Ativo { get; set; }
     }
 }

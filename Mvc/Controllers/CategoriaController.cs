@@ -49,6 +49,7 @@ namespace Mvc.Controllers
             {
                 var categoria = _contexto.Categorias.First(c => c.Id == categoriaPersist.Id);
                 categoria.Nome = categoriaPersist.Nome;
+                categoria.PermiteEstoque = categoriaPersist.PermiteEstoque;
             }
 
             //métodos assincronos otimizam as treads  
