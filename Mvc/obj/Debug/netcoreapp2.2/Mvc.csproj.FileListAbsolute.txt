@@ -36,3 +36,5 @@ C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-ava
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\obj\Debug\netcoreapp2.2\Razor\Views\Categoria\Index.g.cshtml.cs
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\obj\Debug\netcoreapp2.2\Razor\Views\Produto\Index.g.cshtml.cs
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\obj\Debug\netcoreapp2.2\Razor\Views\Produto\Salvar.g.cshtml.cs
+C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\obj\Debug\netcoreapp2.2\Razor\Views\Pedido\Index.g.cshtml.cs
+C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo4\Mvc\obj\Debug\netcoreapp2.2\Razor\Views\Pedido\Salvar.g.cshtml.cs

@@ -1,0 +1,26 @@
+@model IEnumerable<Dominio.Entidades.Pedido>
+
+    <h2>Todos Pedidos</h2>
+    <a href="/Pedido/Salvar" class="btn">Novo Pedido</a>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Numero</td>
+                             <td>@item.DataPedido</td>
+                            <td><a href="/Pedido/Editar/@item.Numero" class="btn">Editar</a></td>                             
+                            <td><a href="/Pedido/Deletar/@item.Numero" class="btn">Deletar</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
