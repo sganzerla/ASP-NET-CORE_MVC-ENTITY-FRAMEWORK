@@ -1,5 +1,10 @@
 # ASP_NET_CORE-ENTITY-FRAMEWORK
 
+//Necessário ter instalado:
+A)  .Net Core SDK 2.2 https://dotnet.microsoft.com/download/dotnet-core/2.2
+B)  MS SQL Server https://www.microsoft.com/pt-br/sql-server/sql-server-downloads
+C)  Visual Studio Code https://code.visualstudio.com/ ou  Visual Studio https://visualstudio.microsoft.com/pt-br/
+
 Comandos pelo terminal
 
 Criando Solução 
