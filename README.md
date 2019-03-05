@@ -1,76 +1,83 @@
-# ASP_NET_CORE-ENTITY-FRAMEWORK
-
-//Necessário ter instalado:
-
-A)  .Net Core SDK 2.2 https://dotnet.microsoft.com/download/dotnet-core/2.2
-
-B)  MS SQL Server https://www.microsoft.com/pt-br/sql-server/sql-server-downloads
-
-C)  Visual Studio Code https://code.visualstudio.com/ ou  Visual Studio https://visualstudio.microsoft.com/pt-br/
-
-
+<h3>Originalmente de ASP.NET Core: Aprendendo do zero ao avançado (v 1.1 e 2.0) de <br>
+Stephany Henrique de Almeida Batista</h3>
+<p>
+Necessário ter instalado:
+</p>
+<ul>
+  <li>
+    .Net Core SDK 2.2 https://dotnet.microsoft.com/download/dotnet-core/2.2
+  </li>  
+  <li>
+    MS SQL Server https://www.microsoft.com/pt-br/sql-server/sql-server-downloads
+  </li>
+  <li>
+    Visual Studio Code https://code.visualstudio.com/ ou  Visual Studio https://visualstudio.microsoft.com/pt-br/
+  </li>
+ </ul>
+<p>
 Comandos pelo terminal
-
-Criando Solução 
+</p><p>
+Criando Solução <br>
 "dotnet new sln"
-
-Criando projeto MVC
+</p><p>
+Criando projeto MVC <br>
 "dotnet new mvc -o MVC"
-
-Adicionando projeto a solução
+</p><p>
+Adicionando projeto a solução <br>
 "dotnet sln add .\MVC\MVC.csproj"
-
-Criando projeto com biblioteca de classes p/ domínio
+</p><p>
+Criando projeto com biblioteca de classes p/ domínio<br>
 "dotnet new classlib -o Dominio"
-
-Adicionando projeto a solução
+</p><p>
+Adicionando projeto a solução <br>
 "dotnet sln add .\Dominio\Dominio.csproj"
-
-Criando projeto de biblioteca de classes p/ dados
+</p><p>
+Criando projeto de biblioteca de classes p/ dados<br>
 "dotnet new classlib -o Dados"
-
-Adicionando projeto a solução
+</p><p>
+Adicionando projeto a solução <br>
 "dotnet sln add .\Dados\Dados.csproj"
-
-Build da solução
+</p><p>
+Build da solução<br>
 "dotnet build"
-
-Adicionando dependências dentro projeto Dados
+</p><p>
+Adicionando dependências dentro projeto Dados<br>
 "cd .\Dados\"
-
-  EntityFramework Core ("cd .\Dados\")
+</p><p>
+  EntityFramework Core ("cd .\Dados\")<br>
   "dotnet add package Microsoft.EntityFrameworkCore"
-
-  Driver do SQLSERVER ("cd .\Dados\")
+</p><p>
+  Driver do SQLSERVER ("cd .\Dados\")<br>
   "dotnet add package Microsoft.EntityFrameworkCore.SqlServer"
-
-  Tools Ferramenta p/ Migrations ("cd .\Dados\")
+</p><p>
+  Tools Ferramenta p/ Migrations ("cd .\Dados\")<br>
   "dotnet add package Microsoft.EntityFrameworkCore.Tools"
-  
-  Adicionando referência do projeto Domínio dentro do projeto Dados ("cd .\Dados\")
+  </p><p>
+  Adicionando referência do projeto Domínio dentro do projeto Dados ("cd .\Dados\")<br>
   "dotnet add reference ..\Dominio\Dominio.csproj"
-  
-Adicionando dependências dentro do projeto MVC
+  </p><p>
+Adicionando dependências dentro do projeto MVC<br>
 "cd .\Mvc\"
-
-  Adicionando referência do projeto Dados dentro do projeto Mvc ("cd .\Mvc\")
+</p><p>
+  Adicionando referência do projeto Dados dentro do projeto Mvc ("cd .\Mvc\")<br>
   "dotnet add reference ..\Dados\Dados.csproj"
-  
-Criando migration dentro Projeto Dados ("cd .\Dados\")
+  </p><p>
+Criando migration dentro Projeto Dados ("cd .\Dados\")<br>
 Entidade Categoria
 "dotnet ef --startup-project ..\Mvc\Mvc.csproj migrations add AdicionandoCategoria"
-
-Atualizando Migrations ("cd .\Dados\")
+</p><p>
+Atualizando Migrations ("cd .\Dados\")<br>
 "dotnet ef --startup-project ..\Mvc\Mvc.csproj database update"
-
-Entidade Produtos
+</p><p>
+Entidade Produtos<br>
 "dotnet ef --startup-project ..\Mvc\Mvc.csproj migrations add AdicionandoProduto"
-
-Atualizando Migrations ("cd .\Dados\")
+</p><p>
+Atualizando Migrations ("cd .\Dados\")<br>
 "dotnet ef --startup-project ..\Mvc\Mvc.csproj database update"
-
-Adicionando referência do projeto Domínio dentro do projeto Mvc ("cd .\Mvc\") 
+</p><p>
+Adicionando referência do projeto Domínio dentro do projeto Mvc ("cd .\Mvc\") <br>
 "dotnet add reference ..\Dominio\Dominio.csproj"
-
-Adicionando biblioteca auxiliar de ORM LazyLoadingProxies ("cd .\Dados\") 
+</p><p>
+Adicionando biblioteca auxiliar de ORM LazyLoadingProxies ("cd .\Dados\") <br>
 "dotnet add package Microsoft.EntityFrameworkCore.Proxies"
+</p>
